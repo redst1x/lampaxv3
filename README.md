@@ -4,23 +4,4 @@
 
 Исходники лампы доступны тут: https://github.com/yumata/lampa-source
 
-#### Устройства
-* LG WebOS
-* Samsung Tizen
-* MSX
-* Android
-* MacOS
-* Windows
-
-## Установка для MSX
-
-На данный момент ручная установка, вам необходим свой собственный хостинг или локальный веб-сервер. 
-
-1. Тут же нажмите на зеленую кнопку (Code) и выберите (Download ZIP) загрузите файлы на хостинг или веб-сервер.
-2. Откройте файл `msx/start.json` и замените содержиое `{domain}` на свой домен или IP
-3. Откройте MSX и выполните установку
-
-## Запуск в Docker'е
-
-1. Соберите образ `docker build --build-arg domain={domain} -t lampa . `
-2. Запустите контейнер `docker run -p 8080:80 -d --restart unless-stopped -it --name lampa lampa`
+#### new v3 test
